@@ -60,7 +60,7 @@ var dict_colors = {
             {
                 $.ajax({
                     type: "GET",
-                    url: list1.value+".csv",
+                    url: 'data/' + list1.value+".csv",
                     dataType: "text",
                     success: function(data) {processData(data,list1.value);}
              });
